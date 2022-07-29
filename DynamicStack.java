@@ -66,20 +66,24 @@ class A1 {
         S.push(5);
         System.out.println("Stack:");
         S.show();
+        System.out.print("\nSize: ");
+        System.out.println(S.size() + " units");
         S.push(10);
         S.push(15);
         S.push(30);
         S.push(35);
         System.out.println("\nStack:");
         S.show();
+        System.out.print("\nSize: ");
+        System.out.println(S.size() + " units");
         System.out.println("\nStack after pop()");
         S.pop();
         S.pop();
         S.pop();
         S.show();
-        System.out.println("\nPeek value:");
-        S.peek();
         System.out.print("\nSize: ");
         System.out.println(S.size() + " units");
+        System.out.println("\nPeek value:");
+        S.peek();
     }
 }
