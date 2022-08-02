@@ -127,7 +127,7 @@ class LinkedList {
             System.out.print(n.data + " --> ");
             n = n.next;
         }
-        System.out.println(n.data + " -->" + "(null)");
+        System.out.println(n.data + " --> " + "null");
     }
 }
 
