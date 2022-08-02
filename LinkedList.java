@@ -99,6 +99,26 @@ class LinkedList {
         return count;
     }
 
+    public void searchInd(int data) {
+        Node n = head;
+        int ind = 0;
+        Boolean bool = false; 
+        while (n.next != null) {
+            n = n.next;
+            ind++;
+            if (n.data == data) {
+                bool = true;
+                break;
+            }
+        }
+        if (bool == true) {
+            System.out.println(bool + " at " + ind + " index.");
+        }
+        else {
+            System.out.println(bool + " data not found");
+        }
+    }
+
     public void show() {
         // To bring node to the starting point which is "head"
         Node n = head;
@@ -114,6 +134,8 @@ class LinkedList {
 class leetcode {
     public static void main(String [] args) {
         LinkedList list = new LinkedList();
+
+        // Simple operations
         list.insert(15);
         list.insert(30);
         list.insert(45);
@@ -127,5 +149,10 @@ class leetcode {
         list.deleteAtEnd();
         list.show();
         System.out.println("Size of LinkedList --> " + list.size() + " nodes.");
+        System.out.println();
+
+        // Complex operations 
+        list.searchInd(30);
+        list.searchInd(55);
     }
 }
