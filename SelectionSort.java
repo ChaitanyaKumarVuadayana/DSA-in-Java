@@ -5,7 +5,7 @@ class SelectionSort {
     public static void main(String [] args) {
         // Given Arrya
         int [] arr = {9,8,7,6,5,4};
-        // Bubble sort
+        // Selection sort
         for (int i=0; i<arr.length-1; i++) {
             // Smallest element index
             int smallest = i;
