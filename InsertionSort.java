@@ -3,7 +3,7 @@
    to Sorted arrya to it's correct position by checking with a while loop each element is shifeted towards right to place current element to it's correct position. */
 
 
-class Tree {
+class InsertionSort {
     public static void main(String [] args) {
         // Given Arrya
         int [] arr = {7,8,3,1,2};
