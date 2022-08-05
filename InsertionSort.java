@@ -3,10 +3,20 @@
    to Sorted arrya to it's correct position by checking with a while loop each element is shifeted towards right to place current element to it's correct position. */
 
 
+import java.util.Scanner;
+
 class InsertionSort {
     public static void main(String [] args) {
-        // Given Arrya
-        int [] arr = {7,8,3,1,2};
+        // User Input Arrya
+        System.out.print("Enter length of the Arrya: ");
+        Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        int [] arr = new int[len];
+        for (int i=0; i<len; i++) {
+            System.out.print("Enter " + i + " index element: ");
+            int a = sc.nextInt();
+            arr[i] = a;
+        }
         // Insertion sort
         for (int i=0; i<arr.length; i++) {
             int current = arr[i];
@@ -24,5 +34,7 @@ class InsertionSort {
         System.out.println(arr[arr.length-1]);
     }
 }
+
+
 
 // Contributed by Chaitanya Kumar
