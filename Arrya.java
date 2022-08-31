@@ -1,4 +1,4 @@
-public class Assignment {
+public class Arrya {
     public static void main(String[] args) {
         Arrya A = new Arrya();
         System.out.println("\n");
